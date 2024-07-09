@@ -1,0 +1,47 @@
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  border: none;
+  background: none;
+  padding: 0;
+  outline: none;
+}
+
+.burger:focus {
+  outline: none;
+}
+
+.burgerSpan {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burgerSpan:nth-of-type(1) {
+  top: 25%;
+  transform-origin: left center;
+}
+
+.burgerSpan:nth-of-type(2) {
+  top: 75%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+@media screen and (max-width: 1080px) {
+  .burger {
+    width: 30px;
+    height: 20px;
+  }
+}
