@@ -81,7 +81,51 @@
 
   .box {
     grid-column: 1 / 7;
-    grid-row: 13 / 20;
+    grid-row: 13 / 40;
+    background-color: antiquewhite;
+    display: grid;
+    place-items: center;
+    grid-auto-rows: 55svh;
+  }
+
+  .card {
+    width: 90vw;
+    height: 50svh;
+    border-radius: 24px;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25svh 25svh;
   }
   
+  .cardImage {
+    background-color: #777;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+
+  .cardText {
+    padding: 0 5vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  .cardTitle {
+    display: grid;
+    align-items: center;
+    
+  }
+
+  .cardTitle h3 {
+    font-size: 7vw;
+    font-family: 600;
+  }
+
+  .cardDescription {
+    font-size: 4vw;
+    line-height: 2;
+  }
 }

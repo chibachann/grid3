@@ -8,14 +8,18 @@ const Section01 = () => {
         <div className={styles.image}>
      
         </div>
-        <div className={styles.title}>
-          <p>Beyond IC</p>
+        <div className={styles.text}>
+          <div className={styles.title}>
+            <p>Beyond IC</p>
+          </div>
+          <div className={styles.subtitle}>
+            <p>AI処理を進化させる</p>
+            <p>次世代3次元チップ集積技術と</p>
+            <p>低電力回路設計技術を研究</p>
+          </div>
         </div>
-        <div className={styles.subtitle}>
-          <p>AI処理を進化させる</p>
-          <p>次世代3次元チップ集積技術と</p>
-          <p>低電力回路設計技術を研究</p>
-        </div>
+
+        
   
 
       </div>

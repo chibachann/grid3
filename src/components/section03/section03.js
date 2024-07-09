@@ -17,7 +17,22 @@ const Section03 = () => {
         </div>
         <div className={styles.box}>
           <div className={styles.card}>
-            
+            <div className={styles.cardImage}>
+            </div>
+            <div className={styles.cardText}>
+              <div className={styles.cardTitle}>
+                <h3>AIプロセッサ</h3>
+              </div>
+              <div className={styles.cardDescription}>
+                <p>従来よりも1/1000の低電力化を実現し、インプランタブルなAIプロセッサの実現を目指します。</p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.card}>
+            <div className={styles.cardImage}>
+            </div>
+            <div className={styles.cardText}>
+            </div>
           </div>
         </div>
       </div>

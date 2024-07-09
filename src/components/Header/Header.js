@@ -15,21 +15,19 @@ const Header = () => {
                 <div className={styles.logo}>
                     <div className={styles.logoPlace} />
                 </div>
-                <div className={styles.OutHamburger}>
+                <div className={styles.Hamburger}>
                     <Hamburger isOpen={isOpen} toggleMenu={toggleMenu} />
                 </div>
                 <div className={`${styles.sideMenu} ${isOpen ? styles.open : ''}`}>
-                    <div className={styles.InHamburger}>
-                        <Hamburger isOpen={isOpen} toggleMenu={toggleMenu} />
-                    </div>
                     <nav className={styles.navigation}>
                         <ul>
-                            <li><a href="/">aaa</a></li>
-                            <li><a href="/">aaa</a></li>
-                            <li><a href="/">aaa</a></li>
-                            <li><a href="/">aaa</a></li>
-                            <li><a href="/">aaa</a></li>
-                            
+                            <li><a href="/">ホーム</a></li>
+                            <li><a href="/">研究テーマ</a></li>
+                            <li><a href="/">活動紹介</a></li>
+                            <li><a href="/">論文・講演等</a></li>
+                            <li><a href="/">メンバー紹介</a></li>
+                            <li><a href="/">トピックス</a></li>
+                            <li><a href="/">お問い合わせ</a></li>
                         </ul>
 
                     </nav>
