@@ -1,7 +1,7 @@
 .burger {
   position: relative;
   width: 40px;
-  height: 30px;
+  height: 20px;
   background: transparent;
   cursor: pointer;
   display: block;
@@ -33,7 +33,7 @@
 }
 
 .oppsiteColor {
-  background: white;
+  background: black;
 }
 
 .burgerSpan:nth-of-type(1) {

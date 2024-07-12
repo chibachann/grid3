@@ -11,7 +11,114 @@
   width: 100vw;
   grid-template-columns: var(--grid-columns);
   grid-auto-rows: 5vw;
-  background-color: aliceblue;
+  background-color: var(--color-primary);
+}
+
+.logo {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  display: grid;
+  place-items: center;
+}
+
+.logoPlace {
+  width: 80%;
+  height: 80%;
+  background-color: chartreuse;
+}
+
+.Hamburger {
+  grid-column: 12 / 13;
+  grid-row: 1 / 2;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+}
+
+.sideMenu {
+  background-color: #e0e0e0;
+  position: fixed;
+  width: 100vw;
+  height: 100svh;
+  opacity: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: calc(100vw / 12);
+
+  animation: fadeOut 0.5s forwards;
+}
+
+.sideMenu.open {
+  animation: fadeIn 0.5s forwards;
+}
+
+.navigation {
+  display: grid;
+  grid-column: 3 / 13;
+  grid-row: 1 / 7;
+  background-color: var(--color-primary);
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: calc(100vw / 12);
+  border-top-left-radius: calc((100vw / 12) * 3);
+  border-bottom-left-radius: calc((100vw / 12) * 3);
+}
+
+.navigation ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 4vw;
+  align-items: center;
+  grid-column: 4 / 10;
+  grid-row: 3 / 7;
+}
+
+.navigation ul li {
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+
+.navigation ul li a {
+  text-decoration: none;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.navigation ul li a:hover {
+  color: var(--color-hover-text);
+}
+
+.listMenu {
+  grid-column: 3 / 12;
+  grid-row: 1 / 2;
+  display: grid;
+  align-items: center;
+  justify-content: end;
+  grid-auto-flow: column;
+}
+
+.listMenu ul {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2vw;
+}
+
+.listMenu ul li {
+  font-size: 1.2vw;
+}
+
+.listMenu ul li a {
+  text-decoration: none;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.listMenu ul li a:hover {
+  color: var(--color-hover-text);
 }
 
 @media screen and (max-width: 480px) {
@@ -82,6 +189,23 @@
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 @keyframes slideIn {
   0% {

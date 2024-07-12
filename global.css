@@ -26,11 +26,11 @@
     --font-family-mincho: "Noto Serif JP", serif;
     
     /* color */
-    --color-primary: rgb(20, 20, 24);
+    --color-primary: white;
     --color-secondary: #111;
-    --color-text: #fff;
-    --color-text-sub: #9c9c9c;
-    --color-hover-text: gray;
+    --color-text: black;
+    --color-text-sub: white;
+    --color-hover-text: rgb(255, 136, 0);
     --color-box: #7a4171;
 
     /* font-size */
